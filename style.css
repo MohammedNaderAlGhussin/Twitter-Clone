@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .active-link {
+    @apply flex justify-center items-center xl:justify-start text-blue-400;
+  }
+  .link {
+    @apply flex justify-center items-center xl:justify-start text-gray-800 hover:text-blue-400 dark:text-white dark:hover:text-blue-400 transition duration-300 ease-in-out;
+  }
+  .icon {
+    @apply hidden xl:block xl:ml-4 font-bold;
+  }
+  .sticky-header {
+    @apply flex justify-between items-center border border-gray-200 dark:border-gray-700 py-3 px-4 sticky top-0 bg-white dark:bg-dim-900;
+  }
+}
+@layer utilities {
+  /* width */
+  ::-webkit-scrollbar,
+  .dark ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* border-radius: 100vh; */
+    background: #fff;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border: 2px solid #fff;
+  }
+
+  /* Track */
+  .dark ::-webkit-scrollbar-track {
+    background: #374151;
+  }
+
+  /* Handle */
+  .dark ::-webkit-scrollbar-thumb {
+    background: #6b7280;
+    border: 2px solid #374151;
+  }
+}
+
+/* 
+ <div class="xl:w-1/5 xl:pr-4 w-20 h-full flex flex-col justify-between">
+        <div class="content">
+          <a href="" class="active-link my-2">
+            <i class="fa-brands fa-twitter text-4xl"></i>
+          </a>
+          <!-- Nav -->
+          <nav class="mt-5">
+            <!-- Active Link -->
+            <a href="" class="active-link mb-8">
+              <i class="fa-solid fa-house text-xl"></i>
+              <span class="icon">Home</span>
+            </a>
+            <a href="" class="link mb-8">
+              <i class="fa-solid fa-hashtag text-xl"></i>
+              <span class="icon">Explore</span>
+            </a>
+            <a href="" class="link mb-8">
+              <i class="fa-solid fa-bell text-xl"></i>
+              <span class="icon">Notifications</span>
+            </a>
+            <a href="" class="link mb-8">
+              <i class="fa-solid fa-envelope text-xl"></i>
+              <span class="icon">Messages</span>
+            </a>
+            <a href="" class="link mb-8">
+              <i class="fa-solid fa-bookmark text-xl"></i>
+              <span class="icon">Bookmarks</span>
+            </a>
+            <a href="" class="link mb-8">
+              <i class="fa-solid fa-list-ul text-xl"></i>
+              <span class="icon">Lits</span>
+            </a>
+            <a href="" class="link mb-8">
+              <i class="fa-solid fa-user text-xl"></i>
+              <span class="icon">Profile</span>
+            </a>
+            <a href="" class="link mb-8">
+              <i class="fa-solid fa-ellipsis text-xl"></i>
+              <span class="icon">More</span>
+            </a>
+          </nav>
+          <button
+            class="bg-blue-400 text-white text-center rounded-[24px] text-[20px] font-bold w-full py-[10px]"
+          >
+            Tweet
+          </button>
+        </div>
+        <div class="footers bg-red-500 w-full">NADERRRRRRRRRRRR</div>
+      </div>
+*/
